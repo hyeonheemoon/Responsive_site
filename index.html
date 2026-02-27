@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melon</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/player.js" defer></script>
+  <script src="./js/playlist.js" defer></script>
+</head>
+
+<body>
+
+  <div class="util_outer" id="header">
+    <nav class="util">
+      <ul class="util_nav">
+        <li><a href="#!">이용권구매</a></li>
+        <li><a href="#!">멜론혜택</a></li>
+        <li><a href="#!">이벤트</a></li>
+        <li><a href="#!">공지사항</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header_outer">
+    <header class="header">
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div><!--햄버거메뉴-->
+      <div class="logo_img">
+        <img src="./images/logo.png" alt="멜론로고">
+      </div><!--로고-->
+      <div class="header_menu_box">
+        <div class="search_icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user">
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+      <div class="search_box">
+        <input type="search" class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <section class="pc_search_area">
+        <div class="famo_search_list_box">
+          <div class="list_title_box">
+            <p class="list_title">
+              인기검색어
+            </p>
+            <p class="list_title_meta">
+              2026.01.20 09:48기준
+            </p>
+          </div>
+          <ul class="search_list">
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">1</p>
+                <p class="search_rank_change up">▲ 3</p>
+                <p class="search_rank_name">아일릿(ILLIT)</p>
+              </a>
+            </li><!--1위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">2</p>
+                <p class="search_rank_change down">▼ 1</p>
+                <p class="search_rank_name">넬(NELL)</p>
+              </a>
+            </li><!--2위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">3</p>
+                <p class="search_rank_change down">▼ 1</p>
+                <p class="search_rank_name">현역가왕</p>
+              </a>
+            </li><!--3위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">4</p>
+                <p class="search_rank_change down">▼ 1</p>
+                <p class="search_rank_name">허윤진</p>
+              </a>
+            </li><!--4위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">5</p>
+                <p class="search_rank_change up">▲ 1</p>
+                <p class="search_rank_name">노아주다</p>
+              </a>
+            </li><!--5위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">6</p>
+                <p class="search_rank_change down">▼ 1</p>
+                <p class="search_rank_name">10cm</p>
+              </a>
+            </li><!--6위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">7</p>
+                <p class="search_rank_change">&nbsp; - &nbsp;</p>
+                <p class="search_rank_name">이찬혁</p>
+              </a>
+            </li><!--7위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">8</p>
+                <p class="search_rank_change">&nbsp; - &nbsp;</p>
+                <p class="search_rank_name">HUNTR/X</p>
+              </a>
+            </li><!--8위-->
+            <li class="search_item">
+              <a href="#">
+                <p class="search_rank">9</p>
+                <p class="search_rank_change up">▲ 1</p>
+                <p class="search_rank_name">체인소맨</p>
+              </a>
+            </li><!--9위-->
+            <li class="search_item">
+              <a href="./detail/detail.html">
+                <p class="search_rank">10</p>
+                <p class="search_rank_change up">▲ 1</p>
+                <p class="search_rank_name">WOODZ</p>
+              </a>
+            </li><!--10위-->
+          </ul>
+
+        </div>
+      </section>
+    </header>
+  </div><!--header-->
+  <section class="search_area">
+    <div class="search_header_outer">
+      <header class="search_header">
+        <div class="back">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div><!--햄버거메뉴-->
+        <p class="header_title">검색</p>
+      </header>
+    </div><!--header-->
+
+    <div class="search_box_frame">
+      <div class="search_box">
+        <input type="search" class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="famo_search_list">
+        <div class="search_txt_box">
+          <p class="search_title">인기 검색어</p>
+          <p class="search_meta">2026.01.06 12시 기준</p>
+        </div>
+        <ul class="famo_list">
+          <li class="famo_item">
+            <a href="#">
+              <div class="rank_box">
+                <span class="rank_num">1</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">눈 내릴때</p>
+              </div><!--곡정보-->
+            </a>
+          </li><!--검색어1위-->
+          <li class="famo_item">
+            <a href="#">
+              <div class="rank_box">
+                <span class="rank_num">2</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">아일릿</p>
+              </div><!--곡정보-->
+            </a>
+          </li><!--검색어2위-->
+          <li class="famo_item">
+            <a href="#">
+              <div class="rank_box">
+                <span class="rank_num">3</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">빌려온 고양이</p>
+              </div><!--곡정보-->
+            </a>
+          </li><!--검색어3위-->
+        </ul>
+        <hr>
+        <div class="search_playlist_area">
+          <p class="search_title">
+            많이 찾는 플레이 리스트
+          </p>
+          <ul class="search_pl_list">
+            <li class="search_pl_item">
+              <a href="#">
+                <img src="./images/search_01.png" alt="플리01">
+              </a>
+            </li>
+            <li class="search_pl_item">
+              <a href="#">
+                <img src="./images/search_02.png" alt="플리02">
+              </a>
+            </li>
+            <li class="search_pl_item">
+              <a href="#">
+                <img src="./images/search_03.png" alt="플리03">
+              </a>
+            </li>
+            <li class="search_pl_item">
+              <a href="#">
+                <img src="./images/search_04.png" alt="플리04">
+              </a>
+            </li>
+            <li class="search_pl_item">
+              <a href="#">
+                <img src="./images/search_05.png" alt="플리05">
+              </a>
+            </li>
+            <li class="search_pl_item">
+              <a href="#">
+                <img src="./images/search_06.png" alt="플리06">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!--검색박스-->
+  <div class="gnb_outer">
+    <ul class="gnb">
+      <li><a href="./index.html">홈</a></li>
+      <li><a href="#!">멜론차트</a></li>
+      <li><a href="#!">최신음악</a></li>
+      <li><a href="#!">장르음악</a></li>
+      <li><a href="./sub/sub.html">멜론매거진</a></li>
+      <li><a href="#!">뮤직비디오</a></li>
+      <li><a href="#!">멜론플리</a></li>
+    </ul>
+  </div><!--gnb-->
+  <section class="sub_menu">
+    <ul class="sub_menu_list">
+      <li class="sub_menu_item">
+        <a href="./index.html">
+          <div class="sub_menu_icon">
+            <img src="./images/home.png" alt="홈아이콘">
+          </div>
+          <p class="sub_menu_title">멜론 홈</p>
+        </a>
+      </li><!--멜론 홈-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/event.png" alt="이벤트아이콘">
+          </div>
+          <p class="sub_menu_title">이벤트</p>
+        </a>
+      </li><!--이벤트-->
+      <hr>
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/chart.png" alt="멜론차트">
+          </div>
+          <p class="sub_menu_title">멜론 차트</p>
+        </a>
+      </li><!--멜론 차트-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/new.png" alt="최신음악">
+          </div>
+          <p class="sub_menu_title">최신음악</p>
+        </a>
+      </li><!--최신음악-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/Genre.png" alt="장르음악">
+          </div>
+          <p class="sub_menu_title">장르음악</p>
+        </a>
+      </li><!--장르음악-->
+      <li class="sub_menu_item">
+        <a href="./sub/sub.html">
+          <div class="sub_menu_icon">
+            <img src="./images/magazine.png" alt="멜론매거진">
+          </div>
+          <p class="sub_menu_title">멜론매거진</p>
+        </a>
+      </li><!--멜론매거진-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/video.png" alt="뮤직비디오">
+          </div>
+          <p class="sub_menu_title">뮤직비디오</p>
+        </a>
+      </li><!--뮤직비디오-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/playlist.png" alt="멜론플레이리스트">
+          </div>
+          <p class="sub_menu_title">멜론플리</p>
+        </a>
+      </li><!--멜론플리-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/ticket.png" alt="멜론티켓">
+          </div>
+          <p class="sub_menu_title">멜론티켓</p>
+        </a>
+      </li><!--멜론티켓-->
+      <hr>
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/notice.png" alt="공지사항">
+          </div>
+          <p class="sub_menu_title">공지사항</p>
+        </a>
+      </li><!--공지사항-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/customer.png" alt="고객센터">
+          </div>
+          <p class="sub_menu_title">고객센터</p>
+        </a>
+      </li><!--고객센터-->
+      <li class="sub_menu_item">
+        <a href="#!">
+          <div class="sub_menu_icon">
+            <img src="./images/setting.png" alt="환경설정">
+          </div>
+          <p class="sub_menu_title">환경설정</p>
+        </a>
+      </li><!--환경설정-->
+    </ul>
+  </section><!--sub_menu-->
+  <div class="dim02"></div>
+  <section class="pc_sub_menu_frame">
+    <div class="pc_sub_menu">
+      <ul class="pc_sub_menu_list">
+        <li><a href="./sub/sub.html">HOT100</a></li>
+        <li><a href="#">TOP 100</a></li>
+      </ul><!--멜론 차트-->
+      <ul class="pc_sub_menu_list">
+        <li><a href="./sub/sub.html">국내 최신</a></li>
+        <li><a href="./sub/sub.html">해외 최신</a></li>
+      </ul><!--최신음악-->
+      <ul class="pc_sub_menu_list">
+        <li><a href="./sub/sub.html">K-POP</a></li>
+        <li><a href="./sub/sub.html">J-POP</a></li>
+        <li><a href="./sub/sub.html">POP</a></li>
+        <li><a href="./sub/sub.html">트로트</a></li>
+        <li><a href="./sub/sub.html">인디뮤직</a></li>
+      </ul><!--장르음악-->
+      <ul class="pc_sub_menu_list">
+        <li><a href="./sub/sub.html">멜론 어워드</a></li>
+        <li><a href="./sub/sub.html">멜론 뉴스</a></li>
+        <li><a href="./sub/sub.html">멜론 포토</a></li>
+        <li><a href="./sub/sub.html">이벤트</a></li>
+      </ul><!--멜론 매거진-->
+      <ul class="pc_sub_menu_list">
+        <li><a href="./sub/sub.html">국내 최신</a></li>
+        <li><a href="./sub/sub.html">해외 최신</a></li>
+      </ul><!--멜론 플리-->
+    </div>
+  </section><!--pc_sub_menu-->
+
+  <div class="banner-slider">
+    <div class="slide">
+      <div class="card">
+        <img src="./images/visual_main01.png">
+      </div>
+    </div>
+    <div class="slide">
+      <div class="card">
+        <img src="./images/visual_main02.png">
+      </div>
+    </div>
+    <div class="slide">
+      <div class="card">
+        <img src="./images/visual_main03.png">
+      </div>
+    </div>
+  </div><!--visual_main-->
+
+  <div class="visual_main">
+    <div class="slide">
+      <a href="#!">
+        <img src="./images/visual_01.png" alt="">
+      </a></div>
+    <div class="slide">
+      <a href="#!">
+        <img src="./images/visual_02.png" alt="">
+      </a></div>
+    <div class="slide">
+      <a href="#!">
+        <img src="./images/visual_03.png" alt="">
+      </a></div>
+  </div><!---pc_visual_main-->
+
+  <div class="frame_wrap">
+    <div class="wrap rs">
+      <section class="chart_container">
+        <div class="contents_title_box">
+          <p class="contents_title">실시간 차트</p>
+          <p class="detail"><a href="#!">더보기 ></a></p>
+        </div>
+        <section class="chart_list_box">
+          <ul class="chart_list">
+            <li class="chart_item" data-src="./mp3/goodbye.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_01.png" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">1</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">Good Goodbye</p>
+                <p class="artist">화사</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart01-->
+
+            <li class="chart_item" data-src="./mp3/timecapsule.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_02.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">2</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">타임캡슐</p>
+                <p class="artist">다비치</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart02-->
+
+            <li class="chart_item" data-src="./mp3/drowning.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_03.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">3</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">Drowning</p>
+                <p class="artist">WOODZ</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart03-->
+
+            <li class="chart_item" data-src="./mp3/blueValentine.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_04.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">4</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">Blue Valentine</p>
+                <p class="artist">NMIXX</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart04-->
+
+            <li class="chart_item" data-src="./mp3/hanroro.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_05.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">5</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">사랑하게 될 거야</p>
+                <p class="artist">한로로</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart05-->
+          </ul><!--차트5위까지-->
+          <ul class="chart_list">
+            <li class="chart_item" data-src="./mp3/golden.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_06.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">6</span>
+                <span class="rank_change">▲ 1</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">Golden</p>
+                <p class="artist">HUNTR/X</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart06-->
+
+            <li class="chart_item" data-src="./mp3/onemoretime.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_07.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">7</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">ONE MORE TIME</p>
+                <p class="artist">ALLDAY PROJECT</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart07-->
+
+            <li class="chart_item" data-src="./mp3/spaghetti.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_08.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">8</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">SPAGHETTI</p>
+                <p class="artist">LE SSERAFIM</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart08-->
+
+            <li class="chart_item" data-src="./mp3/lee.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_04.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">9</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">멸종위기사랑</p>
+                <p class="artist">이찬혁</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart09-->
+
+            <li class="chart_item" data-src="./mp3/notcute.mp3">
+              <div class="thumb_box">
+                <img src="./images/thumb_10.jpg" alt="">
+              </div><!--썸네일이미지-->
+              <div class="rank_box">
+                <span class="rank_num">10</span>
+                <span class="rank_change02">-</span>
+              </div><!--곡랭킹-->
+              <div class="info_box">
+                <p class="title">NOT CUTE ANYMORE</p>
+                <p class="artist">아일릿(ILLIT)</p>
+              </div><!--곡정보-->
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </li><!--chart10-->
+          </ul><!--차트10위까지-->
+        </section>
+      </section><!--실시간차트-->
+
+      <section class="magazine">
+        <div class="contents_title_box">
+          <p class="contents_title">매거진</p>
+          <p class="detail"><a href="#!">더보기 ></a></p>
+        </div>
+        <ul class="magazine_list">
+          <li class="magazine_item">
+            <div class="thumb_box">
+              <img src="./images/news_thumb01.png" alt="매거진 썸네일 이미지1">
+            </div><!--썸네일이미지-->
+            <div class="magazine_info_box">
+              <a href="./detail/detail.html">
+                <p class="title">또 다른 나를 찾아 떠난 여행, WOODZ(우즈) 미니 5집 [OO-LI]</p>
+              </a>
+          </li><!--매거진1-->
+          <li class="magazine_item">
+            <div class="thumb_box">
+              <img src="./images/news_thumb02.png" alt="">
+            </div><!--썸네일이미지-->
+            <div class="magazine_info_box">
+              <a href="./detail/detail.html">
+                <p class="title">ALLDAY PROJECT'의 시작을 알리는 출사표 [FAMOUS]</p>
+              </a>
+          </li><!--매거진2-->
+          <li class="magazine_item">
+            <div class="thumb_box">
+              <img src="./images/news_thumb03.png" alt="">
+            </div><!--썸네일이미지-->
+            <div class="magazine_info_box">
+              <a href="./detail/detail.html">
+                <p class="title">이무진 The 2nd Mini album [만화(滿花)] 자켓 촬영 현장</p>
+              </a>
+          </li><!--매거진3-->
+          <li class="magazine_item">
+            <div class="thumb_box">
+              <img src="./images/news_thumb04.png" alt="">
+            </div><!--썸네일이미지-->
+            <div class="magazine_info_box">
+              <a href="./detail/detail.html">
+                 <p class="title">BOYNEXTDOOR 4th [No Genre] 발매 기념 뮤직웨이브 이벤트!</p>
+              </a>
+          </li><!--매거진4-->
+          <li class="magazine_item">
+            <div class="thumb_box">
+              <img src="./images/news_thumb05.png" alt="">
+            </div><!--썸네일이미지-->
+            <div class="magazine_info_box">
+              <a href="./detail/detail.html">
+                <p class="title">NCT WISH [poppop] 발매</p>
+              </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="new_music_container">
+        <div class="contents_title_box">
+          <p class="contents_title">최신음악 ></p>
+          <p class="new_detail"><a href="#!">더보기 ></a></p>
+          <div class="title_tab_box">
+            <button type="button" class="contents_tab active" data-filter="all">전체</button>
+            <button type="button" class="contents_tab" data-filter="domestic">국내</button>
+            <button type="button" class="contents_tab" data-filter="global">해외</button>
+          </div><!--타이틀 탭버튼-->
+        </div>
+        <div class="new_music_list_box" data-type="all" data-img="01">
+          <div class="new_music_list">
+            <a href="./detail/detail.html">
+              <div class="new_music_img_box"></div>
+              <div class="detail_btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="artist_name_box">
+                <p class="artist_name">WOODZ</p>
+              </div>
+            </a>
+          </div><!--최신음악1-->
+          <div class="new_music_list">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">TEAM도곡</p>
+            </div>
+
+          </div><!--최신음악2-->
+          <div class="new_music_list">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">Park Bench Club</p>
+            </div>
+
+          </div><!--최신음악3-->
+          <div class="new_music_list">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">후추스 (Hoochus)</p>
+            </div>
+
+          </div><!--최신음악4-->
+          <div class="new_music_list">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">Sabrina Carpenter</p>
+            </div>
+
+          </div><!--최신음악5-->
+          <div class="new_music_list">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">버벌진트 (Verbal Jint)</p>
+            </div>
+          </div><!--최신음악6-->
+        </div><!--전체-->
+
+        <div class="new_music_list_box" data-type="domestic">
+          <div class="new_music_list" data-img="01">
+            <div class="new_music_img_box"></div>clo
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">산하</p>
+            </div>
+
+          </div><!--최신음악1-->
+          <div class="new_music_list" data-img="02">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">듀</p>
+            </div>
+
+          </div><!--최신음악2-->
+          <div class="new_music_list" data-img="03">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">에이핑크</p>
+            </div>
+
+          </div><!--최신음악3-->
+          <div class="new_music_list" data-img="04">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">아이덴티티</p>
+            </div>
+
+          </div><!--최신음악4-->
+          <div class="new_music_list" data-img="05">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">오비우스</p>
+            </div>
+
+          </div><!--최신음악5-->
+          <div class="new_music_list" data-img="06">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">노블레스</p>
+            </div>
+          </div><!--최신음악6-->
+        </div><!--국내-->
+
+        <div class="new_music_list_box" data-type="global">
+          <div class="new_music_list" data-img="01">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">YUNGBLUE</p>
+            </div>
+
+          </div><!--최신음악1-->
+          <div class="new_music_list" data-img="02">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">VALORANT</p>
+            </div>
+
+          </div><!--최신음악2-->
+          <div class="new_music_list" data-img="03">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">Johnny Stimson</p>
+            </div>
+
+          </div><!--최신음악3-->
+          <div class="new_music_list" data-img="04">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">Daisy Grenade</p>
+            </div>
+
+          </div><!--최신음악4-->
+          <div class="new_music_list" data-img="05">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">J. Balvin</p>
+            </div>
+
+          </div><!--최신음악5-->
+          <div class="new_music_list" data-img="06">
+            <div class="new_music_img_box"></div>
+            <div class="detail_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="artist_name_box">
+              <p class="artist_name">Fimiguerrero</p>
+            </div>
+          </div><!--최신음악6-->
+        </div><!--해외-->
+
+      </section><!--최신음악-->
+    </div><!--실시간차트, 최신음악-->
+
+    <div class="wrap02">
+      <section class="main_player01">
+        <section class="player_cover_frame">
+          <div class="player_cover_img_box">
+            <img src="./images/player_cover.png" alt="플레이어 커버이미지">
+          </div><!--커버이미지-->
+          <div class="player_info">
+            <p class="player_title">Retro Pop & Chillwave</p>
+            <p class="player_meta">총 49곡 | 02 : 38 : 41</p>
+            <div class="player_controls">
+              <button class="btn_like">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+              <button class="btn_download">
+                <i class="fa-solid fa-download"></i>
+              </button>
+              <button class="btn_play">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button class="btn_repeat">
+                <i class="fa-solid fa-repeat"></i>
+              </button>
+              <button class="btn_more">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div><!--곡정보-->
+        </section>
+
+      </section><!--main_player_01-->
+      <section class="main_player02">
+        <div class="track_frame">
+          <section class="play_list_section">
+            <p class="playlist_title">추천 플레이리스트</p>
+            <div class="playlist_scroll">
+              <div class="playlist_card" data-playlist="retro"></div>
+              <div class="playlist_card" data-playlist="chill"></div>
+              <div class="playlist_card" data-playlist="citypop"></div>
+              <div class="playlist_card" data-playlist="lofi"></div>
+              <div class="playlist_card" data-playlist="house"></div>
+              <div class="playlist_card" data-playlist="rock"></div>
+            </div>
+
+          </section><!--추천플레이리스트-->
+          <section class="track_section">
+            <ul class="track_list">
+              <li class="track_item" data-src="./mp3/drowning.mp3">
+                <div class="track_thumb">
+                </div>
+                <div class="track_info">
+                  <p class="track_title">Marriage</p>
+                  <p class="track_album">
+                    [Marriage] EP
+                  </p>
+                  <p class="track_artist">
+                    Gold Panda
+                  </p>
+                </div>
+                <button type="button" class="track_play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </li><!--track_item01-->
+              <li class="track_item">
+                <div class="track_thumb">
+                </div>
+                <div class="track_info">
+                  <p class="track_title">The North Borders</p>
+                  <p class="track_album">
+                    First Fires
+                  </p>
+                  <p class="track_artist">
+                    Bonobo
+                  </p>
+                </div>
+                <button type="button" class="track_play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </li><!--track_item02-->
+              <li class="track_item">
+                <div class="track_thumb">
+                </div>
+                <div class="track_info">
+                  <p class="track_title">Love Me Forever (Yuksek Mix)</p>
+                  <p class="track_album">
+                    Without Warning
+                  </p>
+                  <p class="track_artist">
+                    Juveniles
+                  </p>
+                </div>
+                <button type="button" class="track_play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </li><!--track_item03-->
+              <li class="track_item">
+                <div class="track_thumb">
+                </div>
+                <div class="track_info">
+                  <p class="track_title">Life Of Leisure</p>
+                  <p class="track_album">
+                    Washed Out
+                  </p>
+                  <p class="track_artist">
+                    Washed Out
+                  </p>
+                </div>
+                <button type="button" class="track_play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </li><!--track_item04-->
+              <li class="track_item">
+                <div class="track_thumb">
+                </div>
+                <div class="track_info">
+                  <p class="track_title">Home and Consonance</p>
+                  <p class="track_album">
+                    Home and Consonance
+                  </p>
+                  <p class="track_artist">
+                    Tropics
+                  </p>
+                </div>
+                <button type="button" class="track_play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </li><!--track_item05-->
+              <li class="track_item">
+                <div class="track_thumb">
+                </div>
+                <div class="track_info">
+                  <p class="track_title">Blessa</p>
+                  <p class="track_album">
+                    Causers Of This
+                  </p>
+                  <p class="track_artist">
+                    Toro y Moi
+                  </p>
+                </div>
+                <button type="button" class="track_play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </li><!--track_item06-->
+            </ul>
+          </section>
+        </div>
+      </section><!--main_player_02-->
+    </div><!--메인플레이어-->
+  </div><!--frame_wrap-->
+
+  <section class="event_banner">
+    <picture>
+      <source srcset="./images/event_banner_mo.png" media="(max-width: 768px)">
+
+      <source srcset="./images/event_banner_pc.png" media="(min-width: 769px)">
+
+      <img src="./images/event_banner_pc.png" alt="이벤트 배너">
+    </picture>
+  </section><!--이벤트배너-->
+
+  <div class="frame_wrap">
+    <div class="wrap">
+      <section class="music_videos">
+        <div class="contents_title_box">
+          <p class="contents_title">인기 뮤직 비디오</p>
+          <p class="detail"><a href="#!">더보기 ></a></p>
+        </div>
+        <ul class="mv_list">
+          <li class="mv_item">
+            <a href="#">
+              <div class="mv_player">
+                <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/ntfGt6_4yrk?si=pgF-0I-WaY2fPyOG"></iframe>
+              </div>
+            </a>
+            <div class="mv_info_box">
+              <p class="mv_title">[MV]Rich Man</p>
+              <p class="mv_artist">aespa</p>
+              <p class="mv_meta">2025. 10. 15 ♥ 342 ▶ 28,500</p>
+            </div>
+          </li><!--mv01-->
+          <li class="mv_item">
+            <a href="#">
+              <div class="mv_player">
+                <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/negtrQu5mTA?si=u_JNwswp70gXYei5"></iframe>
+              </div>
+            </a>
+            <div class="mv_info_box">
+              <p class="mv_title">[MV]빌려온 고양이</p>
+              <p class="mv_artist">ILLIT (아일릿)</p>
+              <p class="mv_meta">2025. 10. 15 ♥ 57M ▶ 439M</p>
+            </div>
+          </li><!--mv02-->
+          <li class="mv_item">
+            <a href="#">
+              <div class="mv_player">
+                <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/js1CtxSY38I?si=xrNx4civwnXYBkDo"></iframe>
+              </div>
+            </a>
+            <div class="mv_info_box">
+              <p class="mv_title"> 'Attention' Official MV</p>
+              <p class="mv_artist">NewJeans (뉴진스)</p>
+              <p class="mv_meta">2025. 10. 15 ♥ 184M ▶ 7932M</p>
+            </div>
+          </li><!--mv03-->
+          <li class="mv_item">
+            <a href="#">
+              <div class="mv_player">
+                <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/qjebIv8FYMI?si=x-Gd2cZxc7XRO_4y"></iframe>
+              </div>
+            </a>
+            <div class="mv_info_box">
+              <p class="mv_title">[MV] Almond Chocolate</p>
+              <p class="mv_artist">ILLIT (아일릿)</p>
+              <p class="mv_meta">2024. 04. 17 ♥ 43M ▶ 3832M</p>
+            </div>
+          </li><!--mv04-->
+          <li class="mv_item">
+            <a href="#">
+              <div class="mv_player">
+                <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/9nOrPNxjvck?si=SZ4I9DCtsMifqdwF"></iframe>
+              </div>
+            </a>
+            <div class="mv_info_box">
+              <p class="mv_title">[MV] ‘LOOK AT ME’ </p>
+              <p class="mv_artist">ALLDAY PROJECT</p>
+              <p class="mv_meta">2025. 12. 08 ♥ 342 ▶ 28,500</p>
+            </div>
+          </li><!--mv05-->
+          <li class="mv_item">
+            <a href="#">
+              <div class="mv_player">
+                <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/TzbGBkEh9ms?si=2_OKiJpcgNpsRj55"></iframe>
+              </div>
+            </a>
+            <div class="mv_info_box">
+              <p class="mv_title">[MV]OVERDRIVE</p>
+              <p class="mv_artist">TWS (투어스)</p>
+              <p class="mv_meta">2025. 10. 13 ♥ 17M ▶ 1290M</p>
+            </div>
+          </li><!--mv06-->
+        </ul>
+      </section><!--인기 뮤직비디오-->
+
+      <section class="editor_pick">
+        <div class="contents_title_box">
+          <p class="contents_title">에디터 추천</p>
+          <p class="detail"><a href="#!">더보기 ></a></p>
+        </div><!--서브타이틀-->
+        <ul class="editor_pick_list">
+          <li class="editor_pick_item">
+            <p class="editor_pick_title">
+              WorkOut
+            </p>
+            <div class="editor_pick_card"></div>
+            <p class="hashtag">#작업 #노동요 #workhard</p>
+            <div class="editor_info_box">
+              <div class="editor_profile">
+                <div class="profile_img">
+                  <img src="./images/profile_01.png" alt="한요한">
+                </div>
+                <p class="editor_name">한요한</p>
+              </div>
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </div>
+          </li><!--editor_pick01-->
+          <li class="editor_pick_item">
+            <p class="editor_pick_title">
+              추운 겨울에 듣게 되는 감성 팝
+            </p>
+            <div class="editor_pick_card"></div>
+            <p class="hashtag">#눈오는날 #추울때 #추운겨울</p>
+            <div class="editor_info_box">
+              <div class="editor_profile">
+                <div class="profile_img">
+                  <img src="./images/profile_02.png" alt="시소웨이브">
+                </div>
+                <p class="editor_name">SISO Wave</p>
+              </div>
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </div>
+          </li><!--editor_pick02-->
+          <li class="editor_pick_item">
+            <p class="editor_pick_title">
+              촉촉 감성 플리
+            </p>
+            <div class="editor_pick_card"></div>
+            <p class="hashtag">#KPOP #아이돌 #플레이리스트</p>
+            <div class="editor_info_box">
+              <div class="editor_profile">
+                <div class="profile_img">
+                  <img src="./images/profile_03.png" alt="jinsee">
+                </div>
+                <p class="editor_name">JINSEE</p>
+              </div>
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </div>
+          </li><!--editor_pick03-->
+          <li class="editor_pick_item">
+            <p class="editor_pick_title">
+              아무 생각하기 싫을 때
+            </p>
+            <div class="editor_pick_card"></div>
+            <p class="hashtag">#재즈 #COZY #JAZZ</p>
+            <div class="editor_info_box">
+              <div class="editor_profile">
+                <div class="profile_img">
+                  <img src="./images/profile_04.png" alt="wrg">
+                </div>
+                <p class="editor_name">WRG</p>
+              </div>
+              <div class="btn_box">
+                <button class="btn"><i class="fa-solid fa-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div><!--버튼박스-->
+            </div>
+          </li><!--editor_pick04-->
+
+        </ul>
+      </section><!--에디터추천-->
+    </div>
+  </div><!--뮤직비디오 에디터추천-->
+
+  <div class="footer_outer">
+    <footer class="footer">
+      <div class="footer_logo">
+        <img src="./images/logo.png" alt="로고 이미지">
+      </div>
+      <ul class="footer_gnb">
+        <li><a href="#!">이용약관 |</a></li>
+        <li><a href="#!">위치기반서비스 이용약관 |</a></li>
+        <li><a href="#!">개인정보처리방침 |</a></li>
+        <li><a href="#!">청소년보호정책 </a></li>
+      </ul>
+      <div class="footer_detail">
+        <p>(주)카카오 엔터테인먼트
+          <span class="open"><i class="fa-solid fa-chevron-down"></i></span>
+          <span class="close"><i class="fa-solid fa-chevron-up"></i></span>
+        </p>
+      </div>
+      <div class="footer_info">
+        <p>(주) 카카오 엔터테인먼트 <br> 경기도 성남시 분당구 판교역로 235, 에이치스퀘어 n동 8,9,10층<br>
+          공동대표이사 : 권기수,장윤중 <br>사업자등록번호 : 220 - 88 -02594<br>
+          통신판매업신고번호 : 2018 - 성남분당 B-0004<br>
+          문의전화 : 1566 -7727 (평일 09:00 - 18:00, 유료)<br>
+          이메일 : melon_info@kakaoent.com <br> 호스팅서비스사업자 : (주)카카오엔터테이먼트<br>
+          ©kakao Entertainment Corp.</p>
+      </div>
+      <ul class="footer_sns">
+        <li><a href="#!"><img src="./images/sns01.png" alt="유튜브"></a></li>
+        <li><a href="#!"><img src="./images/sns02.png" alt="인스타"></a></li>
+        <li><a href="#!"><img src="./images/sns03.png" alt="트위터"></a></li>
+        <li><a href="#!"><img src="./images/sns04.png" alt="페이스북"></a></li>
+      </ul>
+    </footer>
+    <footer class="footer_pc">
+      <div class="footer_gnb_box">
+        <div class="logo_box">
+          <img src="./images/logo.png" alt="멜론 로고">
+        </div><!--푸터로고박스-->
+        <ul class="pc_footer_gnb">
+          <li><a href="#">멜론 스튜디오</a></li>
+          <li><a href="#">멜론 뮤직어워드</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul><!--pc_푸터gnb-->
+      </div><!--푸터gnb박스-->
+      <div class="footer_info_box">
+        <ul class="footer_info_gnb">
+          <li><a href="#!">이용약관 |</a></li>
+          <li><a href="#!"> 위치기반서비스이용약관 |</a></li>
+          <li><a href="#!"> 개인정보처리방침 |</a></li>
+          <li><a href="#!"> 청소년보호정책 |</a></li>
+          <li><a href="#!"> 제휴/프로모션문의 |</a></li>
+          <li><a href="#!"> 이메일주소무단수집거부 |</a></li>
+          <li><a href="#!"> 파트너센터</a></li>
+        </ul>
+        <p class="pc_footer_info">
+          (주) 카카오 엔터테이먼트 경기도 성남시 분당구 판교역로 235, 에이치스퀘어 n동 8,9,10층 | 공동대표이사 : 권기수,장윤중 | 사업자등록번호 : 220 - 88 -02594 |
+          통신판매업신고번호 : 2018 - 성남분당 B-0004 사업자정보확인 >
+          문의전화 : 1566 -7727 (평일 09:00 - 18:00, 유료) | 이메일 : melon_info@kakaoent.com | 호스팅서비스사업자 : (주)카카오엔터테이먼트 | ©kakao
+          Entertainment Corp.
+        </p>
+      </div><!--푸터정보박스-->
+      <ul class="pc_footer_sns">
+        <li><a href="#!"><img src="./images/sns01.png" alt="유튜브"></a></li>
+        <li><a href="#!"><img src="./images/sns02.png" alt="인스타"></a></li>
+        <li><a href="#!"><img src="./images/sns03.png" alt="트위터"></a></li>
+        <li><a href="#!"><img src="./images/sns04.png" alt="페이스북"></a></li>
+      </ul><!--푸터 sns-->
+    </footer>
+  </div>
+
+  <audio id="audio" preload="metadata"></audio>
+  <aside class="player">
+    <div class="player_bar">
+      <div id="bar_fill"></div>
+      <input id="seek" type="range" min="0" value="0" step="0.1">
+    </div>
+    <div class="player_meta">
+      <div class="player_control">
+        <button class="control_btn" type="button">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="control_btn" type="button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="control_btn" type="button">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+      <div class="player_info">
+        <p class="song_title">Manchild</p>
+        <p class="song_artist">Sabrina Carpenter</p>
+      </div>
+      <div class="player_detatil">
+        <button class="btn_detail">
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+  <aside class="player_full">
+    <div class="player_bgimg">
+      <div class="dim"></div>
+      <img src="./images/player_bg.png" alt="플레이어 배경이미지">
+    </div>
+    <div class="player_btn_box">
+      <button class="down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <button class="more">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </div><!--플레이어 버튼박스-->
+    <div class="player_frame">
+      <div class="player_thumb_img">
+        <img src="./images/player_bg.png" alt="플레이어 썸네일 이미지">
+      </div><!--플레이어 썸네일 이미지-->
+      <div class="lyric_box">
+        <p class="full_lyric">전체 가사 보기</p>
+        <p class="lyric"></p>
+      </div><!--전체 가사 보기-->
+      <div class="player_song_info">
+        <p class="ps_title">Manchild</p>
+        <p class="ps_artist">Sabrina Carpenter</p>
+      </div>
+      <div class="progress-wrap">
+        <span class="current">00:00</span>
+        <input type="range" class="progress" value="0" min="0" step="1">
+        <span class="duration">03:56</span>
+      </div>
+      <div class="controls">
+        <button class="repeat"><i class="fa-solid fa-repeat"></i></button>
+        <button class="prev"><i class="fa-solid fa-backward"></i></button>
+        <button class="play"> <i class="fa-solid fa-play"></i></button>
+        <button class="next"><i class="fa-solid fa-forward"></i></button>
+        <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+      </div>
+    </div>
+  </aside><!--플레이어 풀버전-->
+  <section class="player_pl_area">
+    <div class="pl_header">
+      <div class="btn_back">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+      <p> 플레이리스트</p>
+    </div>
+
+    <ul class="player_pl_list">
+      <li class="player_pl_item">
+        <div class="drag_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="pl_info_box">
+          <div class="pl_thumbnail">
+            <img src="./images/thumb_01.png" alt="플레이리스트 썸네일">
+          </div>
+          <div class="pl_info">
+            <p class="pl_song_name">
+              Good Goodbye
+            </p>
+            <p class="pl_artist">
+              화사(HWASA)
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="player_pl_item">
+        <div class="drag_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="pl_info_box">
+          <div class="pl_thumbnail">
+            <img src="./images/thumb_02.jpg" alt="플레이리스트 썸네일">
+          </div>
+          <div class="pl_info">
+            <p class="pl_song_name">
+              타임캡슐
+            </p>
+            <p class="pl_artist">
+              다비치
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="player_pl_item">
+        <div class="drag_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="pl_info_box">
+          <div class="pl_thumbnail">
+            <img src="./images/thumb_03.jpg" alt="플레이리스트 썸네일">
+          </div>
+          <div class="pl_info">
+            <p class="pl_song_name">
+              Drowning
+            </p>
+            <p class="pl_artist">
+              WOODZ
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section><!--플레이어_플레이리스트-->
+
+  <aside>
+    <div class="btn_top">
+      <a href="#header">
+        TOP
+      </a>
+    </div>
+  </aside>
+
+
+
+</body>
+
+</html>
