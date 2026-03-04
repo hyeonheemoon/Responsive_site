@@ -236,13 +236,15 @@ html {
 .famo_search_list_box .list_title_box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 .famo_search_list_box .list_title_box .list_title {
   color: black;
 }
 .famo_search_list_box .list_title_box .list_title_meta {
   color: #444444;
+}
+.famo_search_list_box .list_title_box {
+  margin-bottom: 20px;
 }
 
 .search_list .search_item {
